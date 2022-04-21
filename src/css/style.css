@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+   @apply max-w-[1024px] px-4 mx-auto;
+}
+.btn {
+   @apply text-white w-28 h-12 border-2 border-white rounded-[4px] transition-colors duration-300;
+}
+::-webkit-scrollbar {
+   width: 0;
+}
+.hamburger.active span:first-child {
+   @apply rotate-45 top-2;
+}
+.hamburger.active span:nth-child(2) {
+   @apply scale-0;
+}
+.hamburger.active span:last-child {
+   @apply -rotate-45 bottom-[9px];
+}
+.side-bar.active {
+   left: 0;
+}
+.wrapper.active {
+   overflow: hidden;
+}
